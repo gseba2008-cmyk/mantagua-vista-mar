@@ -18,6 +18,8 @@
     @media(max-width:460px){.gallery-grid{grid-template-columns:1fr;grid-template-rows:none}.gallery figure,.gallery figure:first-child{grid-column:auto;height:360px}.location-note .btn{width:100%}}
     .story{padding-top:0}.story-card{position:relative;overflow:hidden;padding:58px;border-radius:24px;background:var(--pine);color:#fff}.story-card:after{content:"";position:absolute;width:300px;height:300px;right:-120px;top:-150px;border:1px solid rgba(255,255,255,.16);border-radius:50%;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.02)}.story-card>*{position:relative;z-index:1}.story-card .eyebrow{margin-bottom:15px}.story-card h2{max-width:760px;font-size:clamp(2.2rem,5vw,4rem);margin-bottom:30px}.story-copy{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;color:rgba(255,255,255,.78)}.story-copy p{margin:0}.story-copy p:first-child{color:#fff;font-size:1.08rem}
     @media(max-width:800px){.story-card{padding:42px 30px}.story-copy{grid-template-columns:1fr;gap:18px}}
+    .video-head{margin:56px 0 22px}.video-head h3{font-family:Georgia,"Times New Roman",serif;font-size:clamp(1.8rem,4vw,2.7rem);font-weight:400;margin:0 0 8px}.video-head p{margin:0;color:var(--muted)}.video-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.video-card{margin:0;padding:14px;border-radius:20px;background:#fff;border:1px solid var(--line)}.video-card video{width:100%;height:min(68vh,620px);display:block;object-fit:cover;border-radius:14px;background:#102b26}.video-card figcaption{padding:13px 5px 2px;color:var(--pine);font-weight:700}
+    @media(max-width:600px){.video-grid{grid-template-columns:1fr}.video-card video{height:auto;max-height:72vh}}
   </style>
 </head>
 <body>
@@ -69,6 +71,11 @@
         <figure><img src="assets/terreno-amplio.jpg" alt="Superficie abierta del conjunto de lotes" loading="lazy"></figure>
         <figure><img src="assets/entorno.jpg" alt="Entorno residencial cercano al terreno" loading="lazy"></figure>
         <figure><img src="assets/acceso.jpg" alt="Calle pavimentada de acceso al sector" loading="lazy"></figure>
+      </div>
+      <div class="video-head"><h3>Recorrido por el terreno</h3><p>Dos vistas actuales para conocer mejor su amplitud y el entorno.</p></div>
+      <div class="video-grid">
+        <figure class="video-card"><video controls playsinline preload="metadata" poster="assets/recorrido-terreno-1.jpg"><source src="assets/recorrido-terreno-1.mp4" type="video/mp4">Tu navegador no puede reproducir este video.</video><figcaption>Vista general del terreno</figcaption></figure>
+        <figure class="video-card"><video controls playsinline preload="metadata" poster="assets/recorrido-terreno-2.jpg"><source src="assets/recorrido-terreno-2.mp4" type="video/mp4">Tu navegador no puede reproducir este video.</video><figcaption>Entorno y vegetación</figcaption></figure>
       </div>
       <div class="location-note"><div><strong>Sector La Hondonada, Campus del Mar</strong><span>La ubicación mostrada es aproximada. El punto exacto se comparte al coordinar una visita.</span></div><a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=Campus+del+Mar+Mantagua" target="_blank" rel="noopener">Ver sector en Google Maps</a></div>
     </div></section>
